@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Space Conquest - Workshop</title>
+        <link rel="stylesheet" type="text/css" href=<%=url("css/style.css")%>>
+          <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    </head>
+
+    <body>
+        <font color="white">
+        <nav>
+            <div class="nav-wrapper indigo darken-4">
+              <a href="/home" class="brand-logo">Space Conquest</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/starscope">Starscope</a></li>
+                <li><a href="/workshop">Workshop</a></li>
+                <li><a href="/trading">Trading</a></li>
+                <li><a href="/quests">Quests</a></li>
+              </ul>
+            </div>
+        </nav>
+        
+        <br>
+        <form class = "" action = "/wood" method="post">
+            <input type="submit" value="Chop">
+        </form>
+        <form class = "" action = "/iron" method="post">
+            <input type="submit" value="Mine">
+        </form>
+        <form class = "" action = "/clay" method="post">
+            <input type="submit" value="Dig">
+        </form>
+        <form class = "" action = "/food" method="post">
+            <input type="submit" value="Gather">
+        </form>
+         
+        <h3>Wood: <%=session[:wood]%></h3>
+        <h3>Iron: <%=session[:iron]%></h3>
+        <h3>Clay: <%=session[:clay]%></h3>
+        <h3>Foodstuffs: <%=session[:food]%></h3>
+        
+    
+    </body>
+
+
+</html>
